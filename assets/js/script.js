@@ -1,0 +1,3 @@
+var startQuiz = function(event) {
+    
+}

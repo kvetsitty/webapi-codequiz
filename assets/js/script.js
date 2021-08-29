@@ -4,12 +4,24 @@ var submitButton = document.getElementById('submit');
 document.getElementById("startBtn").addEventListener("click", startQuiz);
 
 function startQuiz() {
+    startTimer();
 
-}
+};
 
 function endResults() {
 
 }
+
+//start timer for quiz
+function startTimer() {
+    remainingTime = setInterval(() => {
+        timeLeft--;
+        if (timeLeft <= 0) {
+            clearInterval(remainingTime);
+        };
+        timeDisplay.textContent = "Time Left: " + timeLeft;
+    }, 1000);
+};
 
 //submit for results
 submitButton.addEventListener('click', showResults);

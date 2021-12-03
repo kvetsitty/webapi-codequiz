@@ -9,6 +9,7 @@ A quiz on JavaScript that stores high scores so as students, we can gauge our pr
 *JavaScript
 
 ## Website
+https://kvetsitty.github.io/webapi-codequiz/
 
 ## Contribution
 Made by Kristine E

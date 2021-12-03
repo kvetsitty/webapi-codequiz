@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Web APIs: Quiz</title>
+    <title>Web API Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>View High Scores</nav>
+    <a href="./highscores.html" id="scorePage">High Scores</a>
+    <div id="container">
+      <div id="quizTimer"></div>
+      <div id="quizQuestions">
         <h1>Coding Quiz Challenge</h1>
-        <p>
+        <p id="paragraph">
             Try to answer the following code-related questions within the time limit. 
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
         </p>
-        <button class="btn" id="startBtn">Start</button>
-    </header>
+        <ul id="quizAnswers"></ul>
+        <button id="startQuiz">Start Quiz</button>
+      </div>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
+</html>
